@@ -1,0 +1,265 @@
+html, * {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	width: 320px;
+	margin: 0 auto;
+}
+
+body {
+	font-family: 'Nunito', sans-serif;
+	color: grey;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.header {
+	width: 100%;
+	background-color: #FAFAFA;
+	padding-bottom: 50px;
+}
+
+.header p {
+	width: 75%;
+	font-size: 16px;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+.nav li {
+	display: block;
+	text-align: center;
+	width: 280px;
+	height: 40px;
+	margin: 5px auto;
+	padding-top: 10px;
+	background-color: white;
+	border-radius: 1px;
+}
+
+a {
+	color: black;
+	transition: 0.2s;
+}
+
+a:hover, a:active {
+	color:  rgb(30,93,154);
+}
+
+.portrait {
+	width: 200px;
+	height: 123px;
+	padding: 10px 0;
+}
+
+#portfolio-title {
+	width: 100%;
+	height: 100px;
+}
+
+
+
+.portfolio {
+	width: 300px;
+	height: 169px;
+	padding: 10px 0;
+}
+
+.item p {
+	width: 75%;
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+h1 {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	width: 100%;
+	color: #626262;
+	font-size: 24px;
+}
+
+h2 {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 18px;
+	color: grey;
+	padding-top: 10px;
+}
+
+.contact {
+	background-color: #fafafa;
+	margin: 50px auto;
+	padding-top: 50px;
+	width: 100%;
+}
+
+.contact p {
+	margin: 0 40px 0 40px;
+	font-size: 16px;
+}
+
+
+#portfolio {
+	float: left;
+	margin-left: 20px
+}
+
+#contact {
+	float: left;
+	margin-left: 20px
+}
+
+.return-link {
+	float: right;
+	margin-right: 20px;
+}
+
+.return-link a {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.show-on-mobile {
+	display: inline-block;
+}
+
+.hide-on-mobile {
+	display: none;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #FFF;
+}
+
+.footer {
+	color: #FAFAFA;
+}
+
+.contact-details {
+	font-weight: bold;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+@media (min-width: 769px) {
+	.wrapper {
+		width: 90%;
+		margin: 0 auto;
+		
+	}
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		flex-flow: row wrap;
+		
+	}
+
+	.header p {
+		width: 60%;
+		text-align: left;
+		margin: 20px;
+		font-size: 20px;
+	}
+
+	.portrait {
+		float: right;
+		margin: 0 30px 0 0;
+	}
+
+	.item {
+		position: relative;
+		width: 50%;
+	}
+
+
+	.nav li {
+		display: inline-block;
+		text-align: center;
+		width: 150px;
+		padding: 0; 
+		margin: 0 0 10px 0px;
+		background-color: white;
+		border-radius: 1px;
+	}
+
+	.contact p {
+		margin: 0 100px 0 100px;
+		font-size: 16px;
+	}
+
+	.show-on-mobile {
+		display: none;
+	}
+	
+	.hide-on-mobile {
+		display: inline-block;
+	}
+}
+
+@media (min-width: 1024px) {
+	.wrapper {
+		width: 90%;
+		max-width: 1280px;
+		margin: 0 auto;
+	}
+
+	.header {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.header p {
+		padding-top: 50px;
+	}
+	.container {
+		display: flex;
+		flex-direction: column;
+		flex-flow: row wrap;
+	}
+
+	.portrait {
+		float: right;
+		width: 250px;
+		height: 147.6px;
+		padding: 20px 10px 0 50px;
+	}
+
+	.nav {
+		float: right; 
+	}
+
+	.nav li {
+		display: inline-block;
+		width: 100px;
+		padding: 0; 
+		margin: 0 0 10px 0px;
+		background-color: white;
+		border-radius: 1px;
+	}
+
+	.item {
+		position: relative;
+		width: 33%;
+	}
+
+	.student-name {
+		text-align: left;
+		padding: 20px;
+		width: 60%;
+		display: inline-block;
+		float: left;
+	}
+}
